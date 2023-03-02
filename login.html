@@ -66,16 +66,16 @@
             <div class="navbar-collapse">
               <ul id="nav" class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="ud-menu-scroll" href="index.html">Home</a>
+                  <a class="ud-menu-scroll" href="index.html" target="_blank">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="ud-menu-scroll" href="index.html">Features</a>
+                  <a class="ud-menu-scroll" href="index.html#features">Features</a>
                 </li>
                 <li class="nav-item">
-                  <a class="ud-menu-scroll" href="index.html">Pricing</a>
+                  <a class="ud-menu-scroll" href="index.html#pricing">Pricing</a>
                 </li>
                 <li class="nav-item">
-                  <a class="ud-menu-scroll" href="index.html">Contact</a>
+                  <a class="ud-menu-scroll" href="index.html#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -123,11 +123,6 @@
 
     pageLink.forEach((elem) => {
       elem.addEventListener("click", (e) => {
-        e.preventDefault();
-        document.querySelector(elem.getAttribute("href")).scrollIntoView({
-          behavior: "smooth",
-          offsetTop: 1 - 60,
-        });
       });
     });
 
